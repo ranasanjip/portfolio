@@ -4,19 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sanjib Rana - Software Developer</title>
-  <link rel="icon" href="assets/resume.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header Section -->
+  <!-- Header -->
   <header>
     <div class="container">
-      <div class="profile">
-        <img src="assets/profile.jpg" alt="Sanjib Rana">
-        <h1>Sanjib Rana</h1>
-        <p>Software Developer | React | Java</p>
-      </div>
+      <div class="logo">Sanjib Rana</div>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -31,9 +26,14 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h2>Welcome to My Portfolio</h2>
-      <p>I am a passionate software developer with expertise in React and Java. Currently pursuing my bachelor's degree in IT.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+      <div class="hero-content">
+        <h1>Hello, I'm <span>Sanjib Rana</span></h1>
+        <p>Software Developer | React | Java</p>
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Sanjib Rana">
+      </div>
     </div>
   </section>
 
@@ -41,7 +41,7 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hello! I'm Sanjib Rana, a software developer with intermediate skills in both frontend and backend development. I specialize in React for frontend development and Java for backend solutions. Currently, I am in the first semester of my bachelor's degree in Information Technology.</p>
+      <p>I'm a passionate software developer specializing in <strong>React</strong> and <strong>Java</strong>. Currently, I'm pursuing my bachelor's degree in Information Technology, focusing on both frontend and backend development. I love building scalable, user-friendly applications that solve real-world problems.</p>
     </div>
   </section>
 
@@ -51,24 +51,24 @@
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill">
-          <img src="assets/react-icon.png" alt="React">
+          <i class="fab fa-react"></i>
           <h3>React</h3>
-          <p>Intermediate level expertise in building dynamic and responsive user interfaces.</p>
+          <p>Building dynamic and responsive user interfaces.</p>
         </div>
         <div class="skill">
-          <img src="assets/java-icon.png" alt="Java">
+          <i class="fab fa-java"></i>
           <h3>Java</h3>
-          <p>Proficient in Java for backend development and application logic.</p>
+          <p>Backend development and application logic.</p>
         </div>
         <div class="skill">
-          <img src="assets/frontend-icon.png" alt="Frontend">
+          <i class="fas fa-code"></i>
           <h3>Frontend</h3>
-          <p>Skilled in HTML, CSS, and JavaScript for creating engaging web experiences.</p>
+          <p>HTML, CSS, JavaScript for engaging web experiences.</p>
         </div>
         <div class="skill">
-          <img src="assets/backend-icon.png" alt="Backend">
+          <i class="fas fa-server"></i>
           <h3>Backend</h3>
-          <p>Experience in server-side programming and database management.</p>
+          <p>Server-side programming and database management.</p>
         </div>
       </div>
     </div>
@@ -79,8 +79,8 @@
     <div class="container">
       <h2>Education</h2>
       <div class="education-details">
-        <h3>Bachelor of Information Technology (First Semester)</h3>
-        <p>Currently pursuing my bachelor's degree in IT with a focus on software development and computer science fundamentals.</p>
+        <h3>Bachelor of Information Technology</h3>
+        <p>Currently in my first semester, focusing on software development and IT fundamentals.</p>
       </div>
     </div>
   </section>
@@ -89,10 +89,10 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
+      <form id="contact-form" action="https://formspree.io/f/xpwqjlwk" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
